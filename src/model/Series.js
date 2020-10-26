@@ -353,7 +353,10 @@ var SeriesModel = ComponentModel.extend({
                     color: color,
                     type: 'subItem',
                     renderMode: renderMode,
-                    markerId: markName
+                    markerId: markName,
+                    radius: "10px",
+                    height: "10px",
+                    width: "10px"
                 });
 
                 var dimHeadStr = typeof dimHead === 'string' ? dimHead : dimHead.content;
@@ -419,7 +422,10 @@ var SeriesModel = ComponentModel.extend({
             color: color,
             type: 'item',
             renderMode: renderMode,
-            markerId: markName
+            markerId: markName,
+            radius: "10px",
+            height: "10px",
+            width: "10px"
         });
         markers[markName] = color;
         ++markerId;
